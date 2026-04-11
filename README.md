@@ -1,4 +1,4 @@
-# WRO_EATCHIWI_PR_2026
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/f7cf87c2-b553-47e7-8694-32e8cc9a6e67" /># WRO_EATCHIWI_PR_2026
 
 Engineering materials
 ====
@@ -60,15 +60,19 @@ V-Photos
 ## V 3.0 (tbd)
 <table>
     <tr> 
-        <td> <img src = "C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\IMG-20260401-WA0012" width ="400" height ="300">
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0.jpeg?raw=true" width ="400" height ="300">
         </td> 
-        <td> <img src = "C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\IMG-20260401-WA0012" width ="400" height ="300">
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0%20(2).jpeg?raw=true" width ="400" height ="300">
+        </td>
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0%20(3).jpeg?raw=true" width ="400" height ="300">
         </td>
     </tr>
     <tr> 
-        <td> <img src = "C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\IMG-20260401-WA0012" width ="400" height ="300">
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0%20(4).jpeg?raw=true" width ="400" height ="300">
         </td> 
-        <td> <img src = "C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\IMG-20260401-WA0012" width ="400" height ="300">
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0%20(5).jpeg?raw=true" width ="400" height ="300">
+        </td>
+        <td> <img src = "https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%203.0/V%203.0%20(6).jpeg?raw=true" width ="400" height ="300">
         </td>
     </tr>
     </table>
