@@ -28,7 +28,7 @@ V-Photos
 ## V 1.0 (21/02/2026)
 <table>
     <tr> 
-        <td> <img src = C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\V 1.0 width = "400" height = "300">
+        <td> <img src = https://github.com/Dde567/WRO_EATCHIWI_PR_2026/blob/main/V-Photo/V-Photo%20Version%201.0/V%201.0%20(2).jpg = "400" height = "300">
         </td> 
         <td> <img src = "C:\Users\Jose F. Ortiz Mulero\Documents\GitHub\WRO_EATCHIWI_PR_2026\V-Photo\V-Photo Version 1.0\IMG-20260401-WA0012" width ="400" height ="300">
         </td>
