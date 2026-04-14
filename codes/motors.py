@@ -1,4 +1,5 @@
-from machine import Pin, PWM
+### EJOM CODE ###
+from machine import Pin, PWM      
 
 class m1:
     
