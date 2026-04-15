@@ -7,19 +7,20 @@ This repository contains the documentation of the team EatChiwi on the challenge
 
 ## Table of Content :
 
-* `CAD-FILES` contains 3D files used for the robot.
-* `Code-Engineer` code of the robot.
-* `Codes` contains the libraries used to create the code of the robot.
-* `Electrical-Engineer` schematic diagrams of the electrical components of the robot.
+* `Code-Development` code of the robot.
+    * `Codes` contains the libraries used to create the code of the robot.
+* `Electrical-Specs` schematic diagrams of the electrical components of the robot.
+    * `HardwareCADS` 3d files the vehicle hardware (electrical components).
 * `Journal` register of the things we do on the days we work on the robot.
-* `Mechanical-Engineer` schematic diagrams of the mechanical components of the robot.
+* `Mechanics` schematic diagrams of the mechanical components of the robot.
+    * `CAD` contains 3D files used for the robot.
 * `T-photos` photos of the team.
 * `V-photos` contains photos of the differents versions of the robot.
 * `Video` contains a link to a video where is a driving demostration of our robot.
 
 ## Introduction:
 
-This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
+Hii this is EAT CHIWI, we are a team of 3 from the Vocational School Benjamin Harrinson of Cayey. Our dedication to this project team work was the key to the development of our vehicle. This compact but reliable vehicle runs on RWD drived by a trusty TT motor and a MG996r servo motor for steering. The brain of the car consists of the microcontroller MOTION PRO RP2350 which is a versatile 29 programmable pin board capable of more than what we need it for. Alongside that we have our trusty vl53l0x sensors for distance on each side and 2 apds9960 color sensors on front for a wider detecting range. Our chassis, mechanics, axles etc. are all designed and made by our mechanical engineer and printed using PETG and PLA filaments with the Creality 3 v3 ke and Dremel 3d45 printers
 
 V-Photos
 ===
