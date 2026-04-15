@@ -1,4 +1,4 @@
-### Credits to: https://github.com/cnadler86/MicroPython_Motor/commits?author=cnadler86 ###
+### Credits to: https://github.com/cnadler86/MicroPython_Motor/tree/master ###
 from machine import Pin, PWM
 
 class DCMotor:

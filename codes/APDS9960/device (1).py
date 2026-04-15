@@ -1,4 +1,4 @@
-### https://github.com/liske/python-apds9960/commits?author=kai-morich / https://github.com/liske/python-apds9960/commits?author=liske ###
+### https://github.com/liske/python-apds9960/tree/master ###
 from apds9960.const import *
 from apds9960.exceptions import *
 

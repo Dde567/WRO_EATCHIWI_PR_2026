@@ -1,4 +1,4 @@
-### Credits to: https://github.com/drakxtwo/vl53l1x_pico/commits?author=drakxtwo ###
+### Credits to: https://github.com/drakxtwo/vl53l1x_pico/tree/main ###
 import machine
 
 VL51L1X_DEFAULT_CONFIGURATION = bytes([

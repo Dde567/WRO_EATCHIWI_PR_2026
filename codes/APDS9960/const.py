@@ -1,4 +1,4 @@
-### https://github.com/liske/python-apds9960/commits?author=raceking37 ###
+### https://github.com/liske/python-apds9960/tree/master ###
 # APDS9960 i2c address
 APDS9960_I2C_ADDR = 0x39
 

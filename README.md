@@ -42,7 +42,10 @@ This design was made using 3D printing. It is a small vehicle that has an ultras
     </table>
 
 ## V-1.1 (Mar/28/26)
-### 
+ This model is made using 3D-printed materials and is very similar to the previous design. It includes an ultrasound sensor on the left side, although it is not programmed yet.
+
+This version uses a different differential, which is larger than the one in the previous design. On top of the vehicle, the battery is mounted along with the Maker Pi controller, where all the robot’s data is processed. Overall, this model is a simpler version of the design.
+
 <table>
     <tr> 
         <td> <img src = "V-Photo\V-Photo Version_1.1\V-1.1_Back.jpg" width ="400" height ="300">
@@ -63,7 +66,7 @@ This design was made using 3D printing. It is a small vehicle that has an ultras
     </table>
 
 ## V-1.2 (Apr/10/26)
-### 
+This model is made using 3D printing materials. It includes an ultrasound sensor located on the left side of the model. The chassis has been redesigned because we changed the differential model, which required adjustments to the overall structure. On the top, you can see the battery, and above it is the Cytron Motion RP2350 Pro, where all the data is processed. At the front, there are two TMF8821 sensors used for distance detection, which are not programmed at the moment.
 <table>
     <tr> 
         <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Bottom.jpeg" width ="400" height ="300">
@@ -82,3 +85,18 @@ This design was made using 3D printing. It is a small vehicle that has an ultras
         </td>
     </tr>
     </table>
+
+## About the Code:
+
+Our robot is an autonomous robot programed to complete the Future Engineer's track. To program the robot, the IDE we use is Thonny. To create the code we're using different libraries and sensors:
+
+- `vl53l1x` - https://github.com/drakxtwo/vl53l1x_pico/tree/main
+- `vl53l0x` - https://github.com/uceeatz/VL53L0X/tree/master
+- `apds9960` - https://github.com/liske/python-apds9960/tree/master
+- `hcrs04` - https://github.com/rsc1975/micropython-hcsr04/tree/master
+- `tmf8821` - EJOM CODE
+- `servo` - EJOM CODE 
+- `dcmotor` - https://github.com/cnadler86/MicroPython_Motor/tree/master
+- `bno08x` - https://github.com/dobodu/BOSCH-BNO085-I2C-micropython-library/tree/main
+
+To upload the code to the microcrontoller: connect the microcontroller to your computer using a USB cable. Turn it on, then open your IDE (in our case, Thonny) and make sure the microcontroller is recognized. Press the right click on the program you want to upload and select save. Once saved, the code is successfully uploaded to the microcontroller.

@@ -1,4 +1,4 @@
-### https://github.com/uceeatz/VL53L0X/commits?author=uceeatz ###
+### https://github.com/uceeatz/VL53L0X/tree/master ###
 from micropython import const
 import ustruct
 import utime
