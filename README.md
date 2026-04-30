@@ -4,63 +4,85 @@ This repository contains the documentation of the team EatChiwi on the challenge
 
 ## Table of Content :
 
-* `Code-Development` code of the robot.
-    * `Code-Development\codes` contains the libraries used to create the code of the robot.
-* `Electrical-Specs` schematic diagrams of the electrical components of the robot.
-    * `Electrical-Design\HardwareCADS` 3D files the vehicle hardware (electrical components).
-* `Journal` register of the things we do on the days we work on the robot.
-* `Mechanics` schematic diagrams of the mechanical components of the robot.
-    * `Mechanics\CAD` contains 3D files used for the robot.
-* `T-Photo` photos of the team.
-* `V-Photo` contains photos of the differents versions of the robot.
-* `Video` contains a link to a video where is a driving demostration of our robot.
+|Code-Development | Links |
+|-----------------|-------|
+|Codes | [Code-Development\codes]()|
+|Readme| [Code-Development\README.md]()|
 
-##
+|Electrical-Design | Links |
+|------------------|-------|
+|Hardware CADS     | [Electrical-Design\HardwareCADS]()|
+|Electrical Diagram| [Electrical-Design\Electrical_Diagram.png]()|
+|Readme            | [Electrical-Design\README.md]()|
+
+|Journal | Links |
+|--------|-------|
+|Readme| [Journal\README.md]()|
+
+|Mechanics | Links |
+|----------|-------|
+|CAD   | [Mechanics\CAD]()|
+|Readme| [Mechanics\README.md]()|
 
 |T-Photo | Links |
 |--------|-------|
 |Normal|[T-Photo\Photo Team EatChiwi.jpg]()|
 |Crazy |[T-Photo\Photo Team EatChiwi (2).jpg]()|
+|Readme|[T-Photo\README.md]()|
 
 |V-Photo | Links |
 |--------|-------|
 |V-1.0|[V-Photo\V-Photo Version_1.0]()|
 |V-1.1|[V-Photo\V-Photo Version_1.1]()|
 |V-1.2|[V-Photo\V-Photo Version_1.2]()|
+|V-1.3|[V-Photo\V-Photo Version_1.3]()|
+|V-1.4|[V-Photo\V-Photo Version_1.4]()|
+Readme|[V-Photo\README.md]()|
+
+|Video | Link |
+|------|------|
+Open Lap for PRNRO 2026 (Team EatChiwi)|[https://youtu.be/rVMPH4gbWxk?feature=shared]
 
 ## Introduction:
 
-Hi! This is EatChiwi, we are a team of 3 from the Vocational Superior School Benjamin Harrison of Cayey. Our dedication to this project team work was the key to the development of our vehicle. This compact but reliable vehicle runs on RWD drived by a trusty TT motor and a MG996r servo motor for steering. The brain of the car consists of the microcontroller MOTION PRO RP2350 which is a versatile 30 programmable pin board capable of more than what we need it for. Alongside that we have our trusty vl53l0x sensors for distance on each side and 2 apds9960 color sensors on front for a wider detecting range. Our chassis, mechanics, axles etc. are all designed and made by our mechanical engineer and printed using PETG and PLA filaments with the Creality 3 v3 ke and Dremel 3d45 printers.
+Hi! This is the team EatChiwi, a team of 3 students of the Vocational Superior School Benjamin Harrison of Cayey, Puerto Rico. We are a dedicated team that is participating on the WRO 2026 competition on the category of Future Engineer's. Our dedication in this team work project was the key to the development of our vehicle. All the parts that make up the car (chassis, mechanics, axles, etc.) were designed by our trusted mechanical engineer Efrain Ortiz. All the parts designed were printed using PETG and PLA filaments with the Creality 3 v3 ke and Dremel 3d45 printers. The design of the car it's a squeletical design to be quicker to print, modify or change anything in case of be needed. The brain of the car consists of the microcontroller MOTION PRO RP2350 which is a versatile 30 programmable pin board capable of more than what we need it for. Alongside that, we have 2 APDS9960 color sensors and 2 TMF8821 distance sensors on the front, vl53l0x distance sensors on each side of the car, and a bno08x sensor for the orientation on top.
+
+Team Photo (from left to right)
+===
+- Efrain Ortiz (18) - current senior and our trusted mechanic. Responsible of the creation of the models of the vehicle and the car itself. He's a real innovator and main strategist.
+- Faneshka Cartagena (17) - current junior and is the person dedicated to take note of everything. She's a very dedicated and creative person. Responsible of all the documentation of the creating and thinking process. 
+- Jose Ortiz (16) - current junior and the programmer of the group. Responsible of the creation of the program of the vehicle and the one in charge to make the strategy come to life.
+<table>
+    <tr> 
+        <td> <img src = "T-Photo\Photo Team EatChiwi.jpg" width ="400" height ="300">
+        </td> 
+        <td> <img src = "T-Photo\Photo Team EatChiwi (2).jpg" width ="400" height ="300">
+        </td>
+        </tr>
+    </table>
 
 V-Photo
 ===
 
-## V-1.2 (Apr/10/26)
-This model is made using 3D printing materials. It includes an distant sensor (vl53l0x) located on the left side of the model. The chassis has been redesigned because we changed the differential model, which required adjustments to the overall structure. On the top, you can see the battery, and above it is the Cytron Motion RP2350 Pro, where all the data is processed. At the front, there are two TMF8821 sensors used for distance detection, which are not programmed at the moment.
+## V-1.4 (Apr/29/26)
 <table>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Bottom.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Back.jpeg" width ="400" height ="300">
         </td> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Front.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Bottom.jpeg" width ="400" height ="300">
         </td>
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Front(1).jpeg" width ="400" height ="300">
-        </td> 
     </tr>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Left.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Left.jpeg" width ="400" height ="300">
         </td>
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Top_Cytron Motion RP2350 Pro.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Top.jpeg" width ="400" height ="300">
         </td> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Top.jpeg" width ="400" height ="300">
-        </td>
     </tr>
     </table>
 
-## About the Mechanics
+## About the Mechanics:
 
 The design of the car it's an compact design created in this way to be more quicker to print and more easy to avoid obstacules. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a TT motor and a MG996r servo motor for steering. The brain of the car is the microcontroller MOTION PRO RP2350. The car counts with 4 wheels of 51mm, 2 apds9960 on front, 2 tmf8821 on front, vl53l0x sensors on each side and a bno08x for orientation. On the top, just below the microcontroller it's the battery that have a capacity of 37W/h and can supply 35W continuos and counts with a capacity of 10,000mAh.
-
-
 
 ## About the Code:
 
@@ -69,7 +91,7 @@ Our robot is an autonomous robot programed to complete the Future Engineer's tra
 - `vl53l0x` - https://github.com/uceeatz/VL53L0X/tree/master
 - `apds9960` - https://github.com/liske/python-apds9960/tree/master
 - `tmf8821` - EJOM CODE @Dde567
-- `servo` - EJOM CODE 
+- `servo` - EJOM CODE @Dde567
 - `dcmotor` - https://github.com/cnadler86/MicroPython_Motor/tree/master
 - `bno08x` - https://github.com/dobodu/BOSCH-BNO085-I2C-micropython-library/tree/main
 

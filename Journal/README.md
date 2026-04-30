@@ -102,5 +102,7 @@ We learned that we need to work more on team communication, better organization 
 
 * Apr/25/26 - Today we tested the robot while programming and an issue was presented. The robot is poorly rotating the way it should. Were hoping to fix it.
 
-* Apr/27/26 - 
+* Apr/28/26 - Today, we adjusted the wheels because they came apart while we were practicing on the track on the 25th of this month. Even though it only happened once, we made sure to secure them properly to prevent the issue from happening again. We also worked on the GitHub(car). For the next meeting we are looking forward to the wheels staying in place and performing well.
+
+* Apr/29/26 - Today, we started by practicing on the track. We recorded a video of the vehicle completing the track for our GitHub. We also worked on adding more information to the GitHub.We made good progress the robot now stops when it detects walls and can complete laps. We are looking forward to improving the color detection so the vehicle can perform better on the track.
 
