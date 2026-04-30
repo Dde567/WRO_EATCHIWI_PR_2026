@@ -6,38 +6,38 @@ This repository contains the documentation of the team EatChiwi on the challenge
 
 |Code-Development | Links |
 |-----------------|-------|
-|Codes | [Code-Development\codes]()|
-|Readme| [Code-Development\README.md]()|
+|Codes | [Codes](Code-Development\codes)|
+|Readme| [README.md](Code-Development\README.md)|
 
 |Electrical-Design | Links |
 |------------------|-------|
-|Hardware CADS     | [Electrical-Design\HardwareCADS]()|
-|Electrical Diagram| [Electrical-Design\Electrical_Diagram.png]()|
-|Readme            | [Electrical-Design\README.md]()|
+|Hardware CADS     | [Hardware CADS](Electrical-Design\HardwareCADS)|
+|Electrical Diagram| [Electrical Diagram](Electrical-Design\Electrical_Diagram.png)|
+|Readme            | [README.md](Electrical-Design\README.md)|
 
 |Journal | Links |
 |--------|-------|
-|Readme| [Journal\README.md]()|
+|Readme| [README.md](Journal\README.md)|
 
 |Mechanics | Links |
 |----------|-------|
-|CAD   | [Mechanics\CAD]()|
-|Readme| [Mechanics\README.md]()|
+|CAD   | [CAD](Mechanics\CAD)|
+|Readme| [README.md](Mechanics\README.md)|
 
 |T-Photo | Links |
 |--------|-------|
-|Normal|[T-Photo\Photo Team EatChiwi.jpg]()|
-|Crazy |[T-Photo\Photo Team EatChiwi (2).jpg]()|
-|Readme|[T-Photo\README.md]()|
+|Normal|[T-Photo_Normal](T-Photo\Photo_Team_EatChiwi.jpg)|
+|Crazy |[T-Photo_Crazy](T-Photo\Photo_Team_EatChiwi_(2).jpg)|
+|Readme|[README.md](T-Photo\README.md)|
 
 |V-Photo | Links |
 |--------|-------|
-|V-1.0|[V-Photo\V-Photo Version_1.0]()|
-|V-1.1|[V-Photo\V-Photo Version_1.1]()|
-|V-1.2|[V-Photo\V-Photo Version_1.2]()|
-|V-1.3|[V-Photo\V-Photo Version_1.3]()|
-|V-1.4|[V-Photo\V-Photo Version_1.4]()|
-Readme|[V-Photo\README.md]()|
+|V-1.0|[V-1.0](V-Photo\V-Photo_Version_1.0)|
+|V-1.1|[V-1.1](V-Photo\V-Photo_Version_1.1)|
+|V-1.2|[V-1.2](V-Photo\V-Photo_Version_1.2)|
+|V-1.3|[V-1.3](V-Photo\V-Photo_Version_1.3)|
+|V-1.4|[v-1.4](V-Photo\V-Photo_Version_1.4)|
+Readme|[README.md](V-Photo\README.md)|
 
 |Video | Link |
 |------|------|
@@ -67,16 +67,20 @@ V-Photo
 ## V-1.4 (Apr/29/26)
 <table>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Back.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Bottom.jpeg" width ="400" height ="300">
         </td> 
-        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Bottom.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Back.jpg" width ="400" height ="300">
+        </td>
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Front.jpg" width ="400" height ="300">
         </td>
     </tr>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Left.jpeg" width ="400" height ="300">
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Left.jpeg" width ="400" height ="300">
         </td>
-        <td> <img src = "V-Photo\V-Photo Version_1.4\V-1.4_Top.jpeg" width ="400" height ="300">
-        </td> 
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Top.jpeg" width ="400" height ="300">
+        </td>
+        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Right.jpg" width ="400" height ="300">
+        </td>
     </tr>
     </table>
 
