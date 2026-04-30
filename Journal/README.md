@@ -1,6 +1,31 @@
 # Journal
 In this file you will find our group process of our date a base work and our progress and growth.
+
+## Competitions
+- Feb/21/26 - We had our 1st competition. Landing on first place. We had a lot of complications, starting of with the track it was incomplete that made things harder. Our sensor weren't working either. The scores being equal: 
+    * First Round: 0
+    * Second Round: 27
+    * Third Round (with obstacles): 4
+
+- Mar/28/26 - On March 28, we participated in our second Future Engineers tournament, which took place at Robinson School. From the start of the day, we faced several difficulties. Before going out to compete, our team had a problem due to a lack of communication among ourselves. By mistake, we forgot the infrared sensor, which was the main sensor we were going to use, along with its corresponding MCU. Fortunately, we still had the sound sensors, which were the older method we had used previously, along with their MCU.
+During the trip to Robinson School, I was working on the robot’s programming, trying to at least get it to execute some basic function for the competition.
+When we arrived at the venue, we first went through the registration process. After that, we had the official welcome for the event, and once it ended, we went to our work tables in the competition area. There, we were given approximately 40 minutes for maintenance and programming.
+During that time, we managed to get the robot to move, but it had several issues. The differential was failing, which affected its movement. While I was trying to program and test the sound sensors, an internal error appeared in the code that prevented it from being properly analyzed, and the program was also unable to detect the robot. Because of this, I couldn’t continue working on that part of the programming.
+Given the situation, I decided to simplify the strategy: make the robot move only in a straight line. To try to make it turn correctly, I manually adjusted the front wheels, tilting them slightly in the hope that the robot could turn without touching the walls of the track.
+In the first round, the robot did not move very well and took time to start, but it still managed to complete four sections of the course before hitting a corner.
+Then we had an additional 20 minutes for maintenance and programming. During that time, we tried to better adjust the tires so the robot could go beyond four sections.
+Before the second round, we had an Open Challenge. The challenge consisted of throwing a piece of paper so that it would land in the center of a designated area. The selected twist was that the center square would become a rectangle.
+However, when it was time to run the robot in the second round, it did not start because the differential failed completely. As a result, we got a score of 0 in that round.
+After that, we were given 40 more minutes for maintenance and programming. Since the programming was still causing problems, we attempted a mechanical solution: we placed tape on the differential to try to stabilize it. This worked a little, and the car was able to move again, although not perfectly.
+The third round included obstacles. Each team member could place one obstacle on the course, while the opponents also placed theirs. When it was time to run the robot, it did not work because the pieces of tape we had placed on the differential came loose.
+In the fourth round, we tried the same solution, but the result was the same, and once again we scored 0 points.
+At the end of all the rounds, we finished with a total of 4 points, which placed us in fourth place in the competition.
+Although this experience was frustrating, it was also a great learning opportunity. Despite the problems, we never gave up. Additionally, I had to compete alongside my brother because my teammates had other commitments. It was not easy, but this experience left me highly motivated to improve in the next competition.
+We learned that we need to work more on team communication, better organization before competitions, and improving the design and reliability of the robot.
+
 ##
+##
+
 * Jan/14/26 - The group was created. We gather some ideas with the brainstorm method. One of the ideas were: a compass for reduce the comusme of time for the robot to know where's located.
 
 * Jan/20/26 - Gather some information of the old models.
@@ -66,4 +91,16 @@ We learned that we need to work more on team communication, better organization 
 * Apr/11/26 - Our team worked on the GitHub having it updated on the process. We were having daily (weekly). Also we were fixing the 3D printer and gathering ideas for a new model (focusing on improving the parking).
 
 * Apr/13/26 - We were making a new design with the ideas of April 11, being focused on the parking.
+
+* Apr/14/26 - Today we also were working on the Github making sure we have everything we offer updated, of the new design we were printing the chassis it ended up failing after multiple tries. But we are looking forward to try it again.
+
+* Apr/15/26 - Today we are continuing with the Github and printed a new chassis the reason for this is for the differential its slighly bigger now.
+
+* Apr/21/26 - Today we are working on the Github and also we took pictures together as a group.
+
+* Apr/24/26 - Today we assemble the APDS9960 distance sensors, we are also working on documentation and we also practice on the track.
+
+* Apr/25/26 - Today we tested the robot while programming and an issue was presented. The robot is poorly rotating the way it should. Were hoping to fix it.
+
+* Apr/27/26 - 
 
