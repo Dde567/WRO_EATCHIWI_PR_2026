@@ -9,19 +9,19 @@ The design of the car was made on computer using Fusion, an 3D designer app. The
 ## Car Photos 
 <table>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Bottom.jpeg" width ="400" height ="300">
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Bottom.jpeg" width ="400" height ="300">
         </td> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Front.jpeg" width ="400" height ="300">
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Back.jpg" width ="400" height ="300">
         </td>
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Front(1).jpeg" width ="400" height ="300">
-        </td> 
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Front.jpg" width ="400" height ="300">
+        </td>
     </tr>
     <tr> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Left.jpeg" width ="400" height ="300">
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Left.jpeg" width ="400" height ="300">
         </td>
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Top_Cytron Motion RP2350 Pro.jpeg" width ="400" height ="300">
-        </td> 
-        <td> <img src = "V-Photo\V-Photo Version_1.2\V-1.2_Top.jpeg" width ="400" height ="300">
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Top.jpeg" width ="400" height ="300">
+        </td>
+        <td> <img src = "..\V-Photo/V-Photo Version_1.4\V-1.4_Right.jpg" width ="400" height ="300">
         </td>
     </tr>
     </table>
