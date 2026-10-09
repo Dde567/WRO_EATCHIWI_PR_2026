@@ -22,3 +22,15 @@ The robot will also detect any walls in front of it and stop before crashing. If
 
 On a track with obstacles, the robot follows the same logic, but additionally uses the front distance sensors while it is between two walls (it determines this when both distances are similar and the average is not very large). If the robot detects an object, it will approach it to identify its color. If the obstacle is red, the robot will pass on the right side of the block; if it is green, it will pass on the left side.
 To know when it has completed three laps, the robot keeps count of how many times it detects a larger distance or how many times it turns in a certain direction. In total, there would be 12 turns, since the track is square and each lap represents 4 turns.
+
+## Recent Changes
+
+- VL53L0X for TMF8821
+- APDS9960 for TCS3472
+- BNO085 for BMI270
+
+
+
+
+
+

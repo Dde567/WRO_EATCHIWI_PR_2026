@@ -2,116 +2,200 @@
 
 This repository contains the documentation of the team EatChiwi on the challenge of creating a self-driving vehicle. Here you're going to find all about the creation of the vehicle: mechanical parts, programation, and system thinking. 
 
-Our Ticket to the Internationals!(2026)
+Our Ticket to the Internationals! (2026)
 ===
-![alt text](Extras/Photos/1000111028.jpg)
+
+<div align='center'>
+<img src = "T-Photo/Team_Photos/Eat_Chiwi_Nationals.jpg" width ="700" height ="550">
+</div>
 
 
 ## Introduction:
 
-Greetings, this is the team EatChiwi, a team of 3 students of the Vocational Superior School Benjamin Harrison of Cayey, Puerto Rico. We are a dedicated team that is participating on the WRO 2026 competition on the category of Future Engineer's. Our dedication in this team work project was the key to the development of our vehicle. All the parts that make up the car (chassis, mechanics, axles, etc.) were designed by our trusted mechanical engineer Efrain Ortiz. All the parts designed were printed using PETG and PLA filaments with the Creality 3 v3 ke and Dremel 3d45 printers. The design of the car it's a squeletical design to be quicker to print, modify or change anything in case of be needed. The brain of the car consists of the microcontroller MOTION PRO RP2350 which is a versatile 30 programmable pin board capable of more than what we need it for. Alongside that, we have 2 APDS9960 color sensors and 2 TMF8821 distance sensors on the front, vl53l0x distance sensors on each side of the car, and a bno08x sensor for the orientation on top.
+Welcome to Team EatChiwi, competing in the Future Engineer's category! Our challenge is to design and program a self-driving car. While building the hardware from scratch wasn't a requirement, we wanted to push our limits. We designed, manufactured, and assembled our entired vehicle from the ground up using 3D printed materials, running on our own custom software. In this process, our dedication was the key to keep pushing forward. In this repository, you'll find our story, our background, and learn more about the whole process of how we create our vehicle. 
+
+<div align='center'>
+
+### <U>[Table of Content!](#table-of-content-)</U>
+</div>
 
 Team Photo (from left to right)
 ===
-- Efrain Ortiz (18) - current senior and our trusted mechanic. Responsible of the creation of the models of the vehicle and the car itself. He's a real innovator and main strategist.
-- Faneshka Cartagena (18) - current junior and is the person dedicated to take note of everything. She's a very dedicated and creative person. Responsible of all the documentation of the creating and thinking process. 
-- Jose Ortiz (16) - current junior and the programmer of the group. Responsible of the creation of the program of the vehicle and the one in charge to make the strategy come to life.
+- Efrain Ortiz (18) - current freshman (college) and our trusted mechanic. Responsible of the creation of the models of the vehicle and the car itself. He's a real innovator and main strategist.
+- Faneshka Cartagena (18) - current senior and is the person dedicated to take note of everything. She's a very dedicated and creative person. Responsible of all the documentation of the creating and thinking process. 
+- Jose Ortiz (17) - current senior and the programmer of the group. Responsible of the creation of the program of the vehicle and the one in charge to make the strategy come to life.
+<div align='center'>
 <table>
     <tr> 
-        <td> <img src = "T-Photo\Photo Team EatChiwi.jpg" width ="400" height ="300">
+        <td> <img src = "T-Photo\Team_Photos/Photo Team EatChiwi.jpg" alt="A detailed description of the photo" width ="400" height ="350">
         </td> 
-        <td> <img src = "T-Photo\Photo Team EatChiwi (2).jpg" width ="400" height ="300">
+        <td> <img src = "T-Photo\Team_Photos/Photo Team EatChiwi (2).jpg" width ="400" height ="350">
         </td>
         </tr>
     </table>
+</div>
 
+### <div align='center'> <U> [Learn more about us!](T-Photo\README.md) </U> <div>
 
-The mascot
+Our team's Mascot!
 ===
-
 Meet our team’s mascot, Chisgüys herself, our lucky charm!
 (Ignore what we’re working on in the back.)
 
 <div align='center'>
-  <img src = "Extras/Photos/1000110950.jpg" width ="400" height ="300">
-</div>
-
-V-Photo
-===
-## V-1.4 (Apr/29/26)
 <table>
     <tr> 
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Bottom.jpeg" width ="400" height ="300">
+        <td> <img src = "T-Photo/Team_Photos/Our_Mascot!.jpg" alt="A detailed description of the photo" width ="400" height ="350">
         </td> 
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Back.jpg" width ="400" height ="300">
+        <td> <img src = "T-Photo\Team_Photos\Our_Mascot_Chisgüys.jpg" width ="400" height ="350">
         </td>
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Front.jpg" width ="400" height ="300">
+        </tr>
+    </table>
+</div>
+
+Vehicle Photo
+===
+## V-1.5 (Sept/12/26)
+<div align='center'>
+<table>
+    <tr> 
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Bottom.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Bottom </b>
+  </div>
+</div>
+        </td> 
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Back.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Back </b>
+  </div>
+</div>
+        </td>
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Front.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Front </b>
+  </div>
+</div>
         </td>
     </tr>
     <tr> 
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Left.jpeg" width ="400" height ="300">
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Left.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Left </b>
+  </div>
+</div>
         </td>
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Top.jpeg" width ="400" height ="300">
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Top.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Top </b>
+  </div>
+</div>
         </td>
-        <td> <img src = "V-Photo/V-Photo Version_1.4\V-1.4_Right.jpg" width ="400" height ="300">
+        <td> <div style="position: relative; display: inline-block;">
+        <!-- Image -->
+         <img src="V-Photo/V-Photo Version_1.5\V-1.5_Right.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+  <!-- The Text Overlay -->
+  <div style="
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.79); 
+    color: white; 
+    padding: 8px 12px; 
+    font-family: sans-serif;
+    border-radius: 10px;">
+    <b> Right </b>
+  </div>
+</div>
         </td>
     </tr>
     </table>
+  </div>
 
 ## About the Mechanics:
 
-The design of the car it's an compact design created in this way to be more quicker to print and more easy to avoid obstacules. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a TT motor and a MG996r servo motor for steering. The brain of the car is the microcontroller MOTION PRO RP2350. The car counts with 4 wheels of 51mm, 2 apds9960 on front, 2 tmf8821 on front, vl53l0x sensors on each side and a bno08x for orientation. On the top, just below the microcontroller it's the battery that have a capacity of 37W/h and can supply 35W continuos and counts with a capacity of 10,000mAh.
+The design of the car it's a compact design created in this way to be more quicker to print and more easy to avoid obstacules. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a TT motor and a MG996r servo motor for steering. The brain of the car is the microcontroller MOTION PRO RP2350. The car counts with 4 wheels of 51mm, 2 TCS3472 on front, 2 TMF8821 on front, TMF8821 sensors on each side and will have a BMI270 for orientation. On the top, just below the microcontroller it's the battery that have a capacity of 37W/h and can supply 35W continuos and counts with a capacity of 10,000mAh.
 
 ## About the Code:
 
 Our robot is an autonomous robot programed to complete the Future Engineer's track. To program the robot, the IDE we use is Thonny. To create the code we're using different libraries and sensors:
 
-- `vl53l0x` - https://github.com/uceeatz/VL53L0X/tree/master
-- `apds9960` - https://github.com/liske/python-apds9960/tree/master
+
 - `tmf8821` - EJOM CODE @Dde567
 - `servo` - EJOM CODE @Dde567
-- `dcmotor` - https://github.com/cnadler86/MicroPython_Motor/tree/master
-- `bno08x` - https://github.com/dobodu/BOSCH-BNO085-I2C-micropython-library/tree/main
+- `dcmotor` - [dcmotor.py](Code-Development/lib/dcmotor.py)
+- `tcs3472` - [tcs3472.py](Code-Development/lib/tcs3472.py)
 
-To upload the code to the microcrontoller: connect the microcontroller to your computer using a USB cable. Turn it on, then open your IDE (in our case, Thonny) and make sure the microcontroller is recognized. Press the right click on the program you want to upload and select save. Once saved, the code is successfully uploaded to the microcontroller.
+To upload the code to the microcontroller: connect the microcontroller to your computer using a USB cable. Turn it on, then open your IDE (in our case, Thonny) and make sure the microcontroller is recognized. Press the right click on the program you want to upload and select save. Once saved, the code is successfully uploaded to the microcontroller.
 
 ## Table of Content :
 
-|Code-Development | Links |
-|-----------------|-------|
-|Codes | [Codes](Code-Development\codes)|
-|Readme| [README.md](Code-Development\README.md)|
 
-|Electrical-Design | Links |
-|------------------|-------|
-|Hardware CADS     | [Hardware CADS](Electrical-Design\HardwareCADS)|
-|Electrical Diagram| [Electrical Diagram](Electrical-Design\Electrical_Diagram.png)|
-|Readme            | [README.md](Electrical-Design\README.md)|
+| Type | Content | Readme |
+|------|---------|--------|
+| Mechanics | [CAD](Mechanics/CAD) | [Mobility and Mechanical Design](Mechanics\README.md)|
+| Electrical-Design | [Hardware CADS](Electrical-Design/HardwareCADS) / [Electrical Diagram](Electrical-Design/Electrical_Diagram.png) | [Power and Sensor Architecture](Electrical-Design\README.md)|
+| Code-Development | [Lib](Code-Development/lib)| [Software Architecture and Obstacle Stategy](Code-Development\README.md) |
+| T-Photo | [T-Photo_Normal](T-Photo/Team_Photos/Photo%20Team%20EatChiwi.jpg) / [T-Photo_Crazy](T-Photo\Team_Photos/Photo%20Team%20EatChiwi%20(2).jpg) | [Our Team!](T-Photo/README.md) |
+| V-Photo | [V-1.0](V-Photo/V-Photo%20Version_1.0) / [V-1.1](V-Photo/V-Photo%20Version_1.1) / [V-1.2](V-Photo/V-Photo%20Version_1.2) / [V-1.3](V-Photo/V-Photo%20Version_1.3) / [V-1.4](V-Photo/V-Photo%20Version_1.4) / [V-1.5](V-Photo/V-Photo%20Version_1.5)| [Versions of the Car](V-Photo\README.md) |
+| Video | [Open Lap for PRNRO 2026 (Team EatChiwi)](https://youtu.be/rVMPH4gbWxk?feature=shared) |||
 
-|Journal | Links |
-|--------|-------|
-|Readme| [README.md](Journal\README.md)|
+<div align='center'>
 
-|Mechanics | Links |
-|----------|-------|
-|CAD   | [CAD](Mechanics\CAD)|
-|Readme| [README.md](Mechanics\README.md)|
-
-|T-Photo | Links |
-|--------|-------|
-|Normal|[T-Photo_Normal](T-Photo\Photo_Team_EatChiwi.jpg)|
-|Crazy |[T-Photo_Crazy](T-Photo\Photo_Team_EatChiwi_(2).jpg)|
-|Readme|[README.md](T-Photo\README.md)|
-
-|V-Photo | Links |
-|--------|-------|
-|V-1.0|[V-1.0](V-Photo\V-Photo_Version_1.0)|
-|V-1.1|[V-1.1](V-Photo\V-Photo_Version_1.1)|
-|V-1.2|[V-1.2](V-Photo\V-Photo_Version_1.2)|
-|V-1.3|[V-1.3](V-Photo\V-Photo_Version_1.3)|
-|V-1.4|[v-1.4](V-Photo\V-Photo_Version_1.4)|
-Readme|[README.md](V-Photo\README.md)|
-
-|Video | Link |
-|------|------|
-Open Lap for PRNRO 2026 (Team EatChiwi)|[https://youtu.be/rVMPH4gbWxk?feature=shared]
+#### <u>[Back to the top!](#wro_eatchiwi_pr_2026)<u>
+</div>
