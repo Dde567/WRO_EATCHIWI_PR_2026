@@ -169,15 +169,15 @@ Vehicle Photo
 
 ## About the Mechanics:
 
-The design of the car it's a compact design created in this way to be more quicker to print and more easy to avoid obstacules. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a TT motor and a MG996r servo motor for steering. The brain of the car is the microcontroller MOTION PRO RP2350. The car counts with 4 wheels of 51mm, 2 TCS3472 on front, 2 TMF8821 on front, TMF8821 sensors on each side and will have a BMI270 for orientation. On the top, just below the microcontroller it's the battery that have a capacity of 37W/h and can supply 35W continuos and counts with a capacity of 10,000mAh.
+The design of the car it's a compact design created in this way to be more quicker to print and more easy to avoid obstacules. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a TT motor and a MG996r servo motor for steering. The brain of the car is the microcontroller MOTION PRO RP2350. The car counts with 4 wheels of 51mm, 2 TCS3472 on front, 2 TMF8821 on front and TMF8821 sensors on each side. On the top, just below the microcontroller it's the battery that have a capacity of 37W/h and can supply 35W continuos and counts with a capacity of 10,000mAh.
 
 ## About the Code:
 
 Our robot is an autonomous robot programed to complete the Future Engineer's track. To program the robot, the IDE we use is Thonny. To create the code we're using different libraries and sensors:
 
 
-- `tmf8821` - EJOM CODE @Dde567
-- `servo` - EJOM CODE @Dde567
+- `tmf8821` - [tmf8821.py](Code-Development/lib/tmf8821.py)
+- `servo` - [servo.py](Code-Development/lib/servo.py)
 - `dcmotor` - [dcmotor.py](Code-Development/lib/dcmotor.py)
 - `tcs3472` - [tcs3472.py](Code-Development/lib/tcs3472.py)
 
@@ -189,13 +189,14 @@ To upload the code to the microcontroller: connect the microcontroller to your c
 | Type | Content | Readme |
 |------|---------|--------|
 | Mechanics | [CAD](Mechanics/CAD) | [Mobility and Mechanical Design](Mechanics\README.md)|
-| Electrical-Design | [Hardware CADS](Electrical-Design/HardwareCADS) / [Electrical Diagram](Electrical-Design/Electrical_Diagram.png) | [Power and Sensor Architecture](Electrical-Design\README.md)|
+| Electrical-Design | [Hardware CADS](Electrical-Design/HardwareCADS) / [Wiring Diagram](Electrical-Design/Electrical_Diagrams/Wiring_Diagram_New.jpg) | [Power and Sensor Architecture](Electrical-Design\README.md)|
 | Code-Development | [Lib](Code-Development/lib)| [Software Architecture and Obstacle Stategy](Code-Development\README.md) |
 | T-Photo | [T-Photo_Normal](T-Photo/Team_Photos/Photo%20Team%20EatChiwi.jpg) / [T-Photo_Crazy](T-Photo\Team_Photos/Photo%20Team%20EatChiwi%20(2).jpg) | [Our Team!](T-Photo/README.md) |
 | V-Photo | [V-1.0](V-Photo/V-Photo%20Version_1.0) / [V-1.1](V-Photo/V-Photo%20Version_1.1) / [V-1.2](V-Photo/V-Photo%20Version_1.2) / [V-1.3](V-Photo/V-Photo%20Version_1.3) / [V-1.4](V-Photo/V-Photo%20Version_1.4) / [V-1.5](V-Photo/V-Photo%20Version_1.5)| [Versions of the Car](V-Photo\README.md) |
 | Video | [Open Lap for PRNRO 2026 (Team EatChiwi)](https://youtu.be/rVMPH4gbWxk?feature=shared) |||
+| Robot Assembly Manual | [EC26_Assembly_Manual](Mechanics/EC26_ASSEMBLY_MANUAL.pdf) |||
 
 <div align='center'>
 
-#### <u>[Back to the top!](#wro_eatchiwi_pr_2026)<u>
+### <u>[Back to the top!](#wro_eatchiwi_pr_2026)<u>
 </div>
