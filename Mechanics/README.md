@@ -4,7 +4,7 @@ In this document you'll find all the things related to the mechanical engineer l
 
 ## About Our Car
 
-The design of the car was made on computer using Fusion, an 3D designer app. The designs of the car were made thinking on been compact. Why? Well because if the car is smaller, can avoid obstacules more easily. All the parts that make up the car (chassis, mechanics, axles, etc.) were designed by our trusted mechanical engineer Efraín Ortiz. All the parts designed were printed using PETG and PLA filaments with the Creality 3 v3 ke and Dremel 3d45rinte prs. The chassis of the car is an squeletical design to be quicker to print, modify or change anything in case of be needed. The measurements of the car are: lenght = 25cm, width = 11.5cm, tall = 9cm. The car is RWD drived by a trusty TT motor and a MG996r servo motor for steering. The brain of the car consists of the microcontroller MOTION PRO RP2350 which is a versatile 30 programmable pin board capable of more than what we need it for. The car counts with 4 wheels of 51mm diameter, 2 TCS3472 color sensors on front for a wider detecting range, 2 TMF8821 sensors on the front to read distance, TMF8821 sensors for read distance on each side, a HuskyLens 2 camera for better color detection, and a BMI270 for orientation and acceleration. On the top just below the microcontroller is the battery, this it's a JUOVI power bank that have a capacity of 37W/h and can supply 35W continuos, with a capacity of 10,000mAh and includes dual USB Type-C ports and one USB-A port. 
+Our trsuty EC26 is a rear wheel drive vehicle designed entirely our mechanical engineer with Fusion 360 CAD software. This modular vehicle was made with upgradeability and reliability in mind. This is the smallest design made by me (Efrain Ortiz) and the best so far. Its composed by a custom made differetial and steering system (in this case a rack and pinion) drived by a plastic gearbox 1:48 TT motor (the yellow gearbox) and a MG996R servo motor for positional precision on the steering drive.
 
 ## Current Model Photos (V-1.5)
 <div align='center'>
@@ -118,6 +118,49 @@ The design of the car was made on computer using Fusion, an 3D designer app. The
     </table>
   </div>
 
-## How it is built?
+## Mechanical explanation
 
+### The body (chassis)
+
+  - The chassis was designed AROUND the drive train, this means that we made sure everything has a space before designing the body, the only exception is the oval shape on the differential area that was added later because we had to rework the differential multiple times. THe chassis was made modular for this same purpose, to be easily modified. Also print times and quality are highly improved with a modular design as it can be oriented in ways it takes less support and less movement on the Z axis(up/down).
+
+  ![alt text](image-1.png)
+
+### Drive train
+
+  - The car is rear wheel drive for a simple reason, simplicity. Rear wheel drive does not require rotations a angles in this type of vehicle, so it is more simple as we can skip designing universal jonts. The way the car moves is through a differential drived by a TT motor(1:48), everything except the motor is 3d printed. Another detail is that both axle sides are not the same, this is a trade-off as we decided to prioritize time over comfort because of the problems with the differential.
+ 
+
+### Steering design
+
+  - The steering was another headache to make, like the differential, it was also reworked multiple times. But it came up to be a rack and pinion system for stability, presicion and just looks cooler. Even though we tried to achive ackermann steering it got messed up when we decided to acommodate the servo upfront, but after testing we realised it did not really matter much at that scale, maybe you get outer wheel 1 or 2 degrees of more turn which you cant even see on track. As it was not a issue we did not waste time correcting it.    
+
+
+
+## Design Trade-Off
+
+Some trade offs can be found on the steering system, differential, chassis design and choice of actuators
+
+### Steering System
+
+  - Some common problems with a rack and pinion system is space, it takes more space than other more simple methods, but it also has a better torque transfer and is very stable. our design also has a limited turn radious (~25° to 30°) but this can be modified with the gear ratio and rack length. This isnt really a limiter factor at our aplication as it has not given us much trouble at the challenge.
+
+### Differential
+
+  - Limited max speed as the differential itself lacks bearings and can melt on higher speeds (~200rpm+) even if greased (which is the highly recomended), this was tested by us using a drill to spin the gears at speeds higher than 500rpm (~1000 to 1500 rpm during 1 minute) and surprisingly the differential was still working even after some melting. Our choice of designing our own differential was more of a personal challenge to learn than an actual strategic desicion for better performance, still the results do satisfy our needs in the challenge.
+
+      ![alt text](image.png)
+
+### Chassis design
+
+  - The choice of making the chassis a modular one make us be able to modify parts of the chassis without having to print the whole thing again. The chassis may look a little funny as it contains some big ovals at the differential place, this is because making the differential smaller was taking too much time mainly because of problems with the print quality at small scales with a .4mm noozle. The only trade off of this whacky design is just it being more prone to braking, otherwise is just some stetic preference.
+
+
+
+## Speed/torque reasoning
 On top is the microcontroller MOTION PRO RP2350 and below of it is the battery. Before the front part is located the TT motor and the MG996r servo motor for steering, and on top of it is located the BMI270 for the orientation. On both sides the car counts with the TMF8821 sensor to read distance. On the front the car counts with 2 TCS3472 for color reading and 2 TMF8821 for distance reading. 
+
+## Mechanical components of choice
+
+  ## MG996r
+    -The choice of this bulky space taking servo motor was mainly that the sg90 servos tended to break or burn easily, it was so frequent we had more than 7 servos that were just broken. It is sturdy, reliable and more precise and stable than micro servos, and there is space, so why not.
