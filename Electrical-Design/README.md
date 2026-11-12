@@ -303,3 +303,8 @@ Work in Progress
 
 ### <u>[Back to the top!](#introduction)<u>
 </div>
+
+
+## Custom TMF+TCS sensor 
+
+  -	The tmf+tcs sensor combo is composed of a TMF882X and a TCS34700 series sensor. These sensors are light sensors, TMF series being infrared distance sensor and TCS a 4-channel color sensor (Red, Green, Blue and Clear). TMF882X sensors are grid sensors; they return multiple lectures of a 3x3,4x4 or even 8x8 grid of values. This is useful to identify possible obstacles by sensing differences between values and even mapping where the object stands in relation to the current position. Unfortunately, TMF sensors may prove difficult to utilize in the challenge as black walls are not very reflective, and IR sensors require reflective surfaces to return precise values. Nonetheless, we gave ourselves the challenge to make it work. The TCS sensor is comparable to the previously used APDS9960 sensor, although it seems more precise. The sensors are accompanied by 3 white LEDs for consistent readings by the TCS color sensor; the LEDs are wired to 220 resistors. The SDA and SCL lines are wired to 5.1k ohm pull-ups. The sensor combo was designed with simplicity in mind, it is compact, and it is also the first sensor designed by our electrical engineer.  
