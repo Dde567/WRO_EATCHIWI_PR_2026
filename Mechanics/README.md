@@ -4,7 +4,7 @@ In this document you'll find all the things related to the mechanical engineer l
 
 ## About Our Car
 
-Our trsuty EC26 is a rear wheel drive vehicle designed entirely our mechanical engineer with Fusion 360 CAD software. This modular vehicle was made with upgradeability and reliability in mind. This is the smallest design made by me (Efrain Ortiz) and the best so far. Its composed by a custom made differetial and steering system (in this case a rack and pinion) drived by a plastic gearbox 1:48 TT motor (the yellow gearbox) and a MG996R servo motor for positional precision on the steering drive.
+Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical engineer with Fusion 360 CAD software. This modular vehicle was made with upgrade ability and reliability in mind. This is the smallest design made by us and the best so far. Its composed by a custom made differential and steering system (in this case a rack and pinion) driven by a plastic gearbox 1:48 TT motor (the yellow gearbox) and a MG996R servo motor for positional precision on the steering drive.
 
 ## Current Model Photos (V-1.5)
 <div align='center'>
