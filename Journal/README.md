@@ -23,6 +23,10 @@ At the end of all the rounds, we finished with a total of 4 points, which placed
 Although this experience was frustrating, it was also a great learning opportunity. Despite the problems, we never gave up. Additionally, I had to compete alongside my brother because my teammates had other commitments. It was not easy, but this experience left me highly motivated to improve in the next competition.
 We learned that we need to work more on team communication, better organization before competitions, and improving the design and reliability of the robot.
 
+- May/02-03/26: Today we competed in the national qualifier. We hit a setback during the run and the robot did not perform as well as expected. Our teamwork and our GitHub documentation still earned us 1st place and showed us how important documentation is in this competition.
+
+- Oct/10/26: Today we competed at the Benjamin Harrison tournament and placed 3rd. The car often drove backwards, so fixing this is a priority.
+
 ##
 
 * Jan/14/26 - The group was created. We gather some ideas with the brainstorm method. One of the ideas were: a compass for reduce the comusme of time for the robot to know where's located.
@@ -88,3 +92,84 @@ We learned that we need to work more on team communication, better organization 
 
 * Apr/29/26 - Today, we started by practicing on the track. We recorded a video of the vehicle completing the track for our GitHub. We also worked on adding more information to the GitHub.We made good progress the robot now stops when it detects walls and can complete laps. We are looking forward to improving the color detection so the vehicle can perform better on the track.
 
+* Apr/30/26: Today we made mechanical adjustments to the car, updated the GitHub repository and engineering notebook, and upgraded the program.
+
+* May/01/26: Today we repeated the same process to finish preparing for the national qualifier.
+
+* May/02-03/26: Competitions!
+
+* Aug/16/26: Today we brainstormed future plans for the robot after a long break, including a different structure and different equipment.
+
+* Aug/26/26: Today we received our custom circuit board, which came with our team mascot.
+
+* Aug/30/26: Today we soldered components onto the new themed boards.
+
+* Sep/01/26: Today we designed our team logo while continuing to program.
+
+* Sep/04/26: Today we finished soldering.
+
+* Sep/11/26: Today we coded, mostly the sensor programs.
+
+* Sep/12/26: Today we fixed and re-checked the soldered boards.
+
+* Sep/13/26: Today we reorganized the GitHub repository.
+
+* Sep/14/26: Today we explored different ways to structure the GitHub documentation.
+
+* Sep/15/26: Today we worked out how to add charts to GitHub.
+
+* Sep/17/26: Today we got the new sensors working for the first time.
+
+* Sep/18/26: Today we took photos of the car for the documentation, and continued programming and GitHub work.
+
+* Sep/19/26: Today we programmed the new sensors.
+
+* Sep/20/26: Today we programmed and worked on documentation.
+
+* Sep/21/26: Today we continued working on the program.
+
+* Sep/22/26: Today we drafted future plans for the car (structure, sensors and program).
+Sep 25-28: Today we kept improving the sensor code, updated the documentation, and tested the car’s behavior.
+
+* Oct/01/26: Today we sketched a new design and discussed where to place the camera.
+
+* Oct/06/26: Today we worked on coding and documentation.
+
+* Oct/08/26: Today we worked on GitHub documentation and made a first draft of the camera design in Fusion 360.
+* Oct/09/26: Today we put the vehicle on a platform to watch the program run. Many errors appeared, and we discussed possible solutions.
+
+* Oct/10/26: Competitions! 
+
+* Oct/11/26: Today we worked on the program.
+
+* Oct/12/26: Today we updated the information in the GitHub repository.
+
+* Oct/13/26: Today we added photos of the car and their descriptions to GitHub.
+
+* Oct/14/26: Today we worked on the Fusion 360 design and on coding.
+
+* Oct/22/26: Today we reorganized the structure of the vehicle.
+
+* Nov/01/26: Today we reviewed the car’s code and made a list of what to fix first, starting with the car driving backwards.
+
+* Nov/02/26: Today we tested the motor and steering code on the bench to find out why the car reverses.
+
+* Nov/03/26: Today we cleaned up the sensor code so each sensor has its own clear section and is easier to read.
+
+* Nov/04/26: Today we ran the car on the test track to see how the sensors read the walls and the lines.
+
+* Nov/05/26: Today we adjusted the sensor readings and thresholds based on what we saw on the track.
+
+* Nov/06/26: Today we went back to the Fusion 360 design and worked on the camera mount, using estimated dimensions since we don’t have the camera yet.
+
+* Nov/07/26: Today we updated the GitHub README with a clearer project description and a better layout.
+
+* Nov/08/26: Today we added the parts list to GitHub, with each sensor and electronic component named.
+
+* Nov/09/26: Today we worked on the wiring documentation, writing down which sensor connects to which pin.
+
+* Nov/10/26: Today we tested the steering again after the code changes and fixed small errors in the program.
+
+* Nov/11/26: Today we organized the engineering notebook so the work in it matches what is in the repository.
+
+* Nov/12/26: Today we documented the car versions (Version 1.4, 1.5 and 1.6) with photos and descriptions of the sensors, electronics and 3D-printed structure.

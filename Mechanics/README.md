@@ -4,15 +4,15 @@ In this document you'll find all the things related to the mechanical engineer l
 
 ## About Our Car
 
-Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical engineer with Fusion 360 CAD software. This modular vehicle was made with upgrade ability and reliability in mind. This is the smallest design made by us and the best so far. Its composed by a custom made differential and steering system (in this case a rack and pinion) driven by a plastic gearbox 1:48 TT motor (the yellow gearbox) and a MG996R servo motor for positional precision on the steering drive.
+Our EC26 is a rear wheel drive vehicle design by our mechanical engineer using Fusion 360, a CAD software. This modular vehicle was made with upgrade ability and reliability in mind: it is the smallest design made by us and the best so far. It is composed by a custom made differential and steering system (in this case a rack and pinion), driven by a plastic gearbox 1:48 TT motor (the yellow gearbox), and a MG996R servo motor for positional precision on the steering drive.
 
-## Current Model Photos (V-1.5)
+## Current Model Photos (V-1.6)
 <div align='center'>
 <table>
     <tr> 
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Bottom.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Bottom.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -29,7 +29,7 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
         </td> 
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Back.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Back.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -46,7 +46,7 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
         </td>
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Front.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Front.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -65,7 +65,7 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
     <tr> 
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Left.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Left.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -82,7 +82,7 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
         </td>
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Top.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Top.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -99,7 +99,7 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
         </td>
         <td> <div style="position: relative; display: inline-block;">
         <!-- Image -->
-         <img src="../V-Photo/V-Photo Version_1.5\V-1.5_Right.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
+         <img src="../V-Photo/V-Photo Version_1.6\V-1.6_Right.jpg" alt="Accessibility description" width ="300" height ="300" style="display: block;">
   <!-- The Text Overlay -->
   <div style="
     position: absolute; 
@@ -120,28 +120,26 @@ Our trusty EC26 is a rear wheel drive vehicle designed entirely our mechanical e
 
 ## Hardware location
 
-  - The MOTION PRO RP2350 is located on top of the chassis alongside the battery. Before the front part is located the TT motor (drive motor) and the MG996r servo motor for steering. On both sides the car has TMF8821 sensor to read distance. On the front the car has with our custom tmf+tcs sensors for color and distance detection.
+  - The MOTION PRO RP2350 is located on top of the chassis alongside the battery. Before the front part is located the TT motor (drive motor) and the MG996r servo motor for steering. On both sides the car has TMF8821 sensor to read distance. On the front the car has with our custom TMF + TCS sensors for color and distance detection.
 
 ### The body (chassis)
 
   - The chassis was designed around the drive train, this means that we made sure everything had space before designing the body, the only exception is the oval shape on the differential area that was added later because we had to rework the differential multiple times. 
 
-  - The chassis was made modular to be easily modified. Also print times and quality are highly improved with a modular design as it can be oriented in ways it takes less support and less movement on the Z axis(up/down).
+  - The chassis was made modular to be easily modified. In addition, print times and quality are highly improved with a modular design as it can be oriented in ways it takes less support and less movement on the Z axis(up/down).
 
       <img src= "Images/chassis_exploded_view.png" width="500" height= "300">
 
 ### Drive train
 
   - The car is rear wheel drive for simplicity. Rear wheel drive does not require rotations a angles in this type of vehicle, so it is simpler as we can skip designing universal joints. The driven by a TT motor(1:48) directly coupled to a differential.
-  - Another thing to note is that the axle  halves are asymmetrical, this is a trade-off as we decided to prioritize time over comfort because of the problems with the differential.
-  - 
+  - Another thing to note is that the axle halves are asymmetrical; this is a trade-off as we decided to prioritize time over comfort because of the problems with the differential.
+   
      <img src= "Images/drivetrain_cross_section.png" width="500" height= "300">
 
 ### Steering design
 
-  - The steering was another headache to make, like the differential, it was also reworked multiple times. But it came up to be a rack and pinion system for stability, precision and just looks cooler. Even though we tried to achieve ackermann steering it got messed up when we decided to accommodate the servo upfront, but after testing we realized it did not really matter much at that scale, maybe you get outer wheel 1 or 2 degrees of more turn which you cant even see on track. As it was not a issue we did not waste time correcting it.    
-
-
+  - The steering was another headache to make, like the differential, it was also reworked multiple times. But, as a result, it came up to be a rack and pinion system for stability and precision. Even though we tried to achieve ackermann steering, it got messed up when we decided to accommodate the servo upfront. After testing, we realized it did not really matter much at that scale: maybe you get outer wheel 1 or 2 degrees of more turn which you cannot even see on track. As it was not an issue, we did not dedicate time to solve it.    
 
 ## Design Trade-Off
 
