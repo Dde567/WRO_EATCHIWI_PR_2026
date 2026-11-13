@@ -9,11 +9,37 @@ Our electrical design consists of the amount of 6 sensors, with which our car is
 - 2 TCS3472-TMF8821 sensors on the front for effective color detecting and distance reading.
 - 2 TMF8821 distance sensors on the sides of the robot, one on each side for maintaining the car as centered through the track.
 - MOTION PRO RP2350 which programmed in micropython is more than capable of handling every sensor on the list.
-- A trusty TT motor for driving.
-- An sturdy MG996r servo motor for steering.  
+- A TT motor for driving.
+- An MG996r servo motor for steering.  
 
 
-But this is too simple, right? Just using some generic hardware to make our car drive is too basic for us engineers? Well of course, we can do more, we can do better, and that is why we are designing our own sensors for future competitions. As a matter of fact, we ALREADY have the schematics for a mix of the powerful TCS and TMF sensors (designed by us) in one board and we plan on making the best hardware we can for our needs in this competence. 
+But this is too simple, right? Just using some generic hardware to make our car drive is too basic for us engineers? Well of course, we can do more, we can do better, and that is why we are designing our own sensors for future competitions. As a matter of fact, we ALREADY have the schematics for a mix of the powerful TCS and TMF sensors (designed by us) in one board and we plan on making the best hardware we can for our needs in this competition. 
+
+## Custom TMF+TCS sensor 
+
+  <div align = 'center'>
+<img src = "Electrical_Diagrams/TMF-TCS_Sensor_Board(back_side).jpg" width = "250" height = "250">
+<img src = "Electrical_Diagrams/TMF-TCS_Sensor_Board(front_side).jpg" width = "250" height = "250">
+<img src = "Electrical_Diagrams/TMF-TCS_Sensor_Board_Identified.jpg" width = "250" height = "250">
+</div>
+
+---
+
+  The TMF + TCS sensor combo is composed of a TMF882X and a TCS34700 series sensor. These sensors are optical sensors: TMF series being infrared distance sensor and TCS a 4-channel color sensor (Red, Green, Blue and Clear). 
+  
+  ### TMF882X
+
+  TMF882X sensors are grid sensors; they return multiple lectures of a 3x3,4x4 or even 8x8 grid of values. This is useful to identify possible obstacles by sensing differences between values and even mapping where the object stands in relation to the current position.
+  
+  - Unfortunately, TMF sensors may prove difficult to utilize in the challenge as black walls are not very reflective, and IR sensors require reflective surfaces to return precise values. Nonetheless, we gave ourselves the challenge to make it work.
+   
+  ### TCS34700
+
+   The TCS sensor is comparable to the previously used APDS9960 sensor, although it seems more precise. The sensors are accompanied by 3 white LEDs for consistent readings by the TCS color sensor.
+   
+   ### Printed Circuit Board
+   
+   The sensors LEDs are wired to 220 resistors, while the SDA and SCL lines are wired to 5.1k ohm pull-ups. The sensor combo was designed with simplicity in mind: it is compact, and it is the first sensor designed by our electrical engineer.  
 
  ## Robot Composition 
 
@@ -23,11 +49,13 @@ The chosen hardare for the robot were:
 
 | Hardware | Brief Description | Specifications | Library |
 |--------|-------------------|----------------|---------|
-|TMF8821| Distance Sensor | [ams TMF8821 configurable 4x4 multi-time dToF](https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8821-configurable-4x4-multi-zone-time-of-flight-sensor)| [tmf8821.py](Code-Development/lib/tmf8821.py) |
-|TCS3472| Color Sensor | [TCS3472 Datasheet](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf) | [tcs3472.py](Code-Development/lib/tcs3472.py) |
-|MG996r SERVO| Servo | [MG996r Servo Datasheet](https://components101.com/sites/default/files/component_datasheet/MG996R%20Datasheet.pdf)| [servo.py](Code-Development\lib\servo.py)|
-|TT Motor| Motor Driver | [adafruit TT Motor](https://www.adafruit.com/product/3777?srsltid=AYCX9vK63V0uk5SSyk0xiIwCBCs62URFzfz7q9NVskcAyXs2BLx0SNXz) | [dcmotor.py](Code-Development/lib/dcmotor.py)|
+|TMF8821| Distance Sensor | [ams TMF8821 configurable 4x4 multi-time dToF](https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8821-configurable-4x4-multi-zone-time-of-flight-sensor)| [tmf8821.py](../Code-Development/lib/tmf8821.py) |
+|TCS3472| Color Sensor | [TCS3472 Datasheet](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf) | [tcs3472.py](../Code-Development/lib/tcs3472.py) |
+|MG996r SERVO| Servo | [MG996r Servo Datasheet](https://components101.com/sites/default/files/component_datasheet/MG996R%20Datasheet.pdf)| [servo.py](../Code-Development\lib\servo.py)|
+|TT Motor| Motor Driver | [adafruit TT Motor](https://www.adafruit.com/product/3777?srsltid=AYCX9vK63V0uk5SSyk0xiIwCBCs62URFzfz7q9NVskcAyXs2BLx0SNXz) | [dcmotor.py](../Code-Development/lib/dcmotor.py)|
 |Cytron Motion Pro RP2350| Microcontroller | [Cytron Motion Pro RP2350 Datasheet](https://www.cytron.io/p-motion-2350-pro?srsltid=AU7gw4W5Ifi1J22W_zTflltF3oPrDEIvFmEJ27_g_rW_nqw14TCFXhvm)
+| Power Bank onn | Battery | [Portable Power Bank onn](https://www.walmart.com/ip/onn-10-000-mAh-Portable-Power-Bank-Fast-Charging-Output-20W-Dual-USB-C-ports-USB-port-LED-Digital-Display-Black-Compatible-iPhone-iPad-AirPods-Samsun/14716916910) ||
+| Fixed Voltage Power Trigger | Trigger | [Fixed Voltage Power Trigger PD Decoy Module](https://www.ebay.com/itm/286045490879?_skw=286045490879&itmmeta=01M7649B1F11JH90NDCJN9V2BR&hash=item4299a3cebf:g:qKIAAOSwBxVm2HzN&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde8%2FLkbRAOWvAVT2kz1F5O8Hp4I17t2PFFUNTyZ1pku0Qi%2FiUalDhmOsaqff8bvAXCGYHN1V7abMaJaplxynvhvEze3AKXbW4B5kRwescQRSmb%2FDHetmXg6VcCNPubltZAmuwWjE9ugzqzISHf1OBfNhtQ8yWAR%2BNVbbEk3GCsh7Z7yRSJyrqAEEVOSuNKn3egwtp8tr3zyI3A9mVzgUeDxGIr7KhXAZ6X9NP%2BJBBYmri1aW9QgGFAxb4y6PupXZUKA%3D%7Ctkp%3ABk9SR-iwpcS5aA) ||
 
 ## [Wiring Diagram](Electrical_Diagrams/Wiring_Diagram_New.jpg)
 
@@ -36,6 +64,8 @@ The chosen hardare for the robot were:
 </div>
 
 ## Power Architecture
+
+This section describes how the battery supplies power to the various components of the robot, as well as the power consumption of the hardware components.
 
 <div align = 'center'>
 <img src = "Electrical_Diagrams/Power_Architecture_Diagram.jpg" width = "700" height = "300">
@@ -48,6 +78,10 @@ The chosen hardare for the robot were:
 | TCS3472 (color sensor) | 2.7V (min) - 3.6V (max) | 15mAh - 20mAh | Regulator 3.3V | 
 | MG996r (servo) | 4.8V (min) - 7.2V (max)| Operating Current (Under load): 500mAh - 900mAh| Regulator 5.0V|
 | TT Motor (motor) | 3.0V (min) - 7.5V (max) (optimal: 6V)| Normal Operating Current: 200mAh - 250mAh / Stall: 1200mAh - 1500mAh | Regulator 12.0V  | 
+
+### Why the motor receive the energy through the 12V regulator when the optimal is 6V?
+
+Although the optimal volatge to the motor is 6V, we decided to provide the energy through the 12V regulator of the Cytron Motion Pro. The reason of this is because we can overvoltage the TT motor to give more power to the robot. We already have test it and the robot runs completely normal without proble even when the TT motor is receiving 12V.
 
 
 ## Power Budget
@@ -76,7 +110,7 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
   ### Why we decide to use it?
 
-  We decide to use the TMF8821 distance sensor for the robot. Why we choose this? Well, after using other distance sensors like the Vl53l0x and the Vl53l1x (V-1.4 and past versions), or the hcsr04 distance sensor (V-1.3 and past versions), the one who give us better results in reading distance it was the TMF8821. It ensures better readings than the others, specifically better readings when its time to read the black walls of the circuit. For this reason, we decided to keep and use the TMF8821 in the robot, seeking for the best readings and more accuracy.
+  We decide to use the TMF8821 distance sensor for the robot. Why we choose this? Well, after using other distance sensors like the Vl53l0x and the Vl53l1x (V-1.4 and past versions), or the hcsr04 distance sensor (V-1.3 and past versions), the one who give us better results in reading distance it was the TMF8821. It ensures better readings than the others, specifically better readings when it is time to read the black walls of the circuit. For this reason, we decided to keep and use the TMF8821 in the robot, seeking for the best readings and more accuracy.
 
   ### Ubication
 
@@ -132,6 +166,13 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
   Initially, we used the SG90 servo motor, but it didn't work because the robot required more torque to move correctly. We therefore looked for a similar alternative that met the necessary requirements and found the MG996R servo motor—the perfect choice for us.
 
+  | Feature | MG996r Servo Motor | SG90 Servo Motor |
+  | :-----: | ------------------ | ---------------- | 
+  | Torque | ~1.2 kg·cm (at 4.8V) | ~1.8 kg·cm (at 6V)	~9 to 11 kg·cm (at 4.8V - 7.2V) | 
+  | Weight | 9 grams (micro servo)| 55 grams (standard size) |
+  | Gears | Plastic | Metal |
+  | Operating Voltage | 4.8V – 6V (up to ~7.2V) | 4.8V – 7.2V |
+
   ### Ubication
 
   MG996r Servo is located is located a bit further ahead of the robot's center—roughly halfway between the center of the robot and its front. The MG996r Servo is the one intended to make the robot turn and enable it to maneuver along the track.
@@ -181,13 +222,40 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
   ### Why we decide to use it?
 
-  Of all the microcontroller we could have choosen, we decided to go with the Cytron Motion Pro RP2350. This microcontroller provide us more than we need; it's a fast, precise, and easy to use microcontroller, guaranteeing us that all the information would be processed and analyzed to take the refined decisions.
+  Of all the microcontroller we could have choosen, we decided to go with the Cytron Motion Pro RP2350. This microcontroller gives us extra headroom for future improvements; it's a fast, precise, and easy to use microcontroller, guaranteeing us that all the information would be processed and analyzed to take the refined decisions.
 
   ### Ubication
 
   The Cytron Motion Pro RP2350 is located in the center of the robot, at the top, just above the battery. The microcontroller Cytron Motion Pro RP2350 is the one who takes all the decisions, process all the data, and tells the robot what to do.
 
 </details>
+
+  <details>
+  <summary>
+    <span style="font-size: 16px; font-weight: bold;"> Fixed Voltage Power Trigger (click to expand)</span>
+  </summary>
+  <br>
+
+  <div align = 'center'>
+  <img src = "Electrical_Diagrams/Fixed_Voltage_Power_Trigger.png" width = "400" height = "300">
+
+  ### Fixed Voltage Power Trigger
+  </div>
+  
+  ### What it is?
+  
+  A 12V Type-C USB-C DC Fixed Voltage Power Trigger PD Decoy Module is a small hardware board that tricks a USB Power Delivery (PD) or Quick Charge (QC) charger/power bank into outputting a steady 12V DC instead of the default 5V.
+
+  ### Why we decide to use it?
+
+  We decided to add this Power Trigger to the board because it allows us to supply more voltage to the board, making the robot more efficient and faster in every aspect. We chose 12V as the desired voltage to allow us some headroom to turbocharge (over-volt) out motor and gain some significant speed when desired. 
+
+  ### Ubication
+
+  This power delivery trigger board is soldered where the 3.6V-16V screw terminal used to live. The reason of being here is to be easy to connect it to the battery. This Power Trigger is the one destinated to distribute the energy to all the parts of the board.
+
+</details>
+
 
 <details>
   <summary>
@@ -203,7 +271,7 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
   ### What it is?
   
-  The battery we decided to use is a onn Portable Power Bank (model WIABLK36009632). It has a capacity of 10,000 mAh, an storage capacity of 38.5 Wh, and a 20W fast-charging output. It can supply 29 Wh continuos, providing us with more than we need. 
+  The battery we decided to use is a onn Portable Power Bank (model WIABLK36009632). It has a capacity of 10,000 mAh, an storage capacity of 38.5 Wh, and a 20W fast-charging output. It can supply 29 Wh continuos, giving us extra headroom for future improvements.
 
   - This power bank includes dual USB-C ports and one USB-A port, it has an approximate weight of 0.44 lb (200 g) and dimensions of 4.53 x 2.76 x 0.63 inches, making it easy to carry. 
   - It features an internal voltage of 3.85V (the nominal voltage for lithium cells), but regulates its output to 5V, 9V, and 12V via its ports.
@@ -292,19 +360,21 @@ Work in Progress
 
 ## Recent Changes
 
-- VL53L0X for TMF8821
-- APDS9960 for TCS3472
-- BNO085 for BMI270
-- Discard BMI270
-- Discard HuskyLens 2
-- Battery JUOVI for onn Power Bank
-
+- <span style="font-size: 15px; font-weight: bold;"> VL53L0X for TMF8821 - </span>
+We decided to replace the VL53L0X sensor with the TMF8821 sensor, as the readings from the VL53L0X were not very accurate. It was to be expected that distance measurements would be erroneous due to the black walls. Consequently, we opted to use the TMF8821 sensors, as we had already tested them and they yielded better results than the VL53L0X sensors.
+- - - - - 
+- <span style="font-size: 15px; font-weight: bold;"> APDS9960 for TCS3472 - </span>
+Initially, we used the APDS9960, but we encountered issues with identifying the color of the pillars. The readings from the APDS9960 were not accurate, and it frequently confused the color green with red. Consequently, we researched other color sensors and discovered the TCS3472. We decided to test it, and since it provided better readings, we opted to implement it in the robot.
+- - - - -
+- <span style="font-size: 15px; font-weight: bold;"> BNO085 for BMI270 - </span>
+Work in Progress
+- - - - - 
+- <span style="font-size: 15px; font-weight: bold;"> Discard HuskyLens 2 -</span>
+We wanted to test the HuskyLens 2 camera for color detection and environmental analysis; however, due to a lack of time, we were unable to master its operation and integrate it into the robot.
+- - - - - 
+- <span style="font-size: 15px; font-weight: bold;"> Battery JUOVI for onn Power Bank - </span>
+The JUOVI battery was replaced by an onn-brand Power Bank, as the JUOVI unit suddenly failed and we urgently needed a replacement; the onn battery was the option that met all our requirements.
 <div align='center'>
 
-### <u>[Back to the top!](#introduction)<u>
+### <u>[Back to the top!](#introduction)</u>
 </div>
-
-
-## Custom TMF+TCS sensor 
-
-  -	The tmf+tcs sensor combo is composed of a TMF882X and a TCS34700 series sensor. These sensors are light sensors, TMF series being infrared distance sensor and TCS a 4-channel color sensor (Red, Green, Blue and Clear). TMF882X sensors are grid sensors; they return multiple lectures of a 3x3,4x4 or even 8x8 grid of values. This is useful to identify possible obstacles by sensing differences between values and even mapping where the object stands in relation to the current position. Unfortunately, TMF sensors may prove difficult to utilize in the challenge as black walls are not very reflective, and IR sensors require reflective surfaces to return precise values. Nonetheless, we gave ourselves the challenge to make it work. The TCS sensor is comparable to the previously used APDS9960 sensor, although it seems more precise. The sensors are accompanied by 3 white LEDs for consistent readings by the TCS color sensor; the LEDs are wired to 220 resistors. The SDA and SCL lines are wired to 5.1k ohm pull-ups. The sensor combo was designed with simplicity in mind, it is compact, and it is also the first sensor designed by our electrical engineer.  

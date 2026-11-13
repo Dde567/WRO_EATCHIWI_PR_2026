@@ -35,7 +35,7 @@ Team Photo (from left to right)
     </table>
 </div>
 
-### <div align='center'> <U> [Learn more about us!](T-Photo\README.md) </U> <div>
+### <div align='center'> <U> [Learn more about us!](T-Photo/README.md) </U> <div>
 
 Our team's Mascot!
 ===
@@ -188,11 +188,11 @@ To upload the code to the microcontroller: connect the microcontroller to your c
 
 | Type | Content | Readme |
 |------|---------|--------|
-| Mechanics | [CAD](Mechanics/CAD) | [Mobility and Mechanical Design](Mechanics\README.md)|
-| Electrical-Design | [Hardware CADS](Electrical-Design/HardwareCADS) / [Wiring Diagram](Electrical-Design/Electrical_Diagrams/Wiring_Diagram_New.jpg) | [Power and Sensor Architecture](Electrical-Design\README.md)|
-| Code-Development | [Lib](Code-Development/lib)| [Software Architecture and Obstacle Stategy](Code-Development\README.md) |
+| Mechanics | [CAD](Mechanics/CAD) | [Mobility and Mechanical Design](Mechanics/README.md)|
+| Electrical-Design | [Hardware CADS](Electrical-Design/HardwareCADS) / [Wiring Diagram](Electrical-Design/Electrical_Diagrams/Wiring_Diagram_New.jpg) | [Power and Sensor Architecture](Electrical-Design/README.md)|
+| Code-Development | [Lib](Code-Development/lib)| [Software Architecture and Obstacle Stategy](Code-Development/README.md) |
 | T-Photo | [T-Photo_Normal](T-Photo/Team_Photos/Photo%20Team%20EatChiwi.jpg) / [T-Photo_Crazy](T-Photo\Team_Photos/Photo%20Team%20EatChiwi%20(2).jpg) | [Our Team!](T-Photo/README.md) |
-| V-Photo | [V-1.0](V-Photo/V-Photo%20Version_1.0) / [V-1.1](V-Photo/V-Photo%20Version_1.1) / [V-1.2](V-Photo/V-Photo%20Version_1.2) / [V-1.3](V-Photo/V-Photo%20Version_1.3) / [V-1.4](V-Photo/V-Photo%20Version_1.4) / [V-1.5](V-Photo/V-Photo%20Version_1.5)| [Versions of the Car](V-Photo\README.md) |
+| V-Photo | [V-1.0](V-Photo/V-Photo%20Version_1.0) / [V-1.1](V-Photo/V-Photo%20Version_1.1) / [V-1.2](V-Photo/V-Photo%20Version_1.2) / [V-1.3](V-Photo/V-Photo%20Version_1.3) / [V-1.4](V-Photo/V-Photo%20Version_1.4) / [V-1.5](V-Photo/V-Photo%20Version_1.5)| [Versions of the Car](V-Photo/README.md) |
 | Video | [Open Lap for PRNRO 2026 (Team EatChiwi)](https://youtu.be/rVMPH4gbWxk?feature=shared) |||
 | Robot Assembly Manual | [EC26_Assembly_Manual](Mechanics/EC26_ASSEMBLY_MANUAL.pdf) |||
 

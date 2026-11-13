@@ -149,7 +149,7 @@ One of the TMFs read mostly the left side and the other the right side, making e
 To determine if is in the center, we uses the most close values to the center from the TMFs, being this the values further to the right in the TMF8821 inclined to the left and the values further to the left in the TMF8821 inclined to the right. 
 
 <div align ='center'>
-<img src = "Code_Diagrams/POV_sensors.png" width = "400" height = "250">
+<img src = "Code_Diagrams/POV_sensors.jpg" width = "400" height = "250">
 </div>
 
 ### Rule Compliance and Decision Logic
