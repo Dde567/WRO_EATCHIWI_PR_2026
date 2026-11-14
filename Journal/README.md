@@ -27,6 +27,8 @@ We learned that we need to work more on team communication, better organization 
 
 - Oct/10/26: Today we competed at the Benjamin Harrison tournament and placed 3rd. The car often drove backwards, so fixing this is a priority.
 
+- Nov/13/26: Today we competed in the 3rd Olimpiada Regional de Robótica 2026 (WRO) and placed 3rd. We ran into some technical problems during the competition, but they helped us see what we need to fix before the internationals. Our main priorities now are improving our GitHub documentation and our code.
+
 ##
 
 * Jan/14/26 - The group was created. We gather some ideas with the brainstorm method. One of the ideas were: a compass for reduce the comusme of time for the robot to know where's located.
@@ -173,3 +175,5 @@ Sep 25-28: Today we kept improving the sensor code, updated the documentation, a
 * Nov/11/26: Today we organized the engineering notebook so the work in it matches what is in the repository.
 
 * Nov/12/26: Today we documented the car versions (Version 1.4, 1.5 and 1.6) with photos and descriptions of the sensors, electronics and 3D-printed structure.
+
+* Nov/13/26: Competitions!

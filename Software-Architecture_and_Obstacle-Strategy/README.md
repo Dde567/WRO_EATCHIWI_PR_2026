@@ -21,7 +21,6 @@ To upload the code to the microcontroller:
 ### 3. <u> [Algorithms](#algorithms) </u> 
 ### 4. <u> [Obstacle Strategy](#obstacle-strategy) </u> 
 ### 5. <u> [Edge Cases](#edge-cases) </u> 
-### 6. <u> [Tests and Adjustments](#tests-and-adjustments) </u> 
 
 ## Software Organization 
 
@@ -254,34 +253,3 @@ If a sensor stops working, the procedure will be differnt depending on the conte
     </tr>
   </tbody>
 </table>
-
-## Tests and Adjustments
-
-<div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px;">
-  
-  <!-- Card 1 -->
-  <div style="flex: 1; min-width: 280px; border: 1px solid #d0d7de; border-radius: 6px; padding: 16px; background-color: #f6f8fa;">
-    <span style="background-color: #cf222e; color: white; padding: 4px 8px; border-radius: 20px; font-size: 12px; font-weight: bold;">TEST #01</span>
-    <h4 style="margin-top: 10px; margin-bottom: 8px;">Work in Progress</h4>
-    <p style="font-size: 13px; color: #57606a;">Work in Progress</p>
-    <hr style="height: 1px; border: none; background-color: #d0d7de; margin: 12px 0;">
-    <span style="background-color: #1a7f37; color: white; padding: 4px 8px; border-radius: 20px; font-size: 12px; font-weight: bold;">APPROACH</span>
-    <p style="font-size: 13px; margin-top: 8px; font-weight: 500;">Work in Progress</p>
-  </div>
-
-  <!-- Card 2 -->
-  <div style="flex: 1; min-width: 280px; border: 1px solid #d0d7de; border-radius: 6px; padding: 16px; background-color: #f6f8fa;">
-    <span style="background-color: #cf222e; color: white; padding: 4px 8px; border-radius: 20px; font-size: 12px; font-weight: bold;">TEST #02</span>
-    <h4 style="margin-top: 10px; margin-bottom: 8px;">Work in Progress</h4>
-    <p style="font-size: 13px; color: #57606a;">Work in Progress</p>
-    <hr style="height: 1px; border: none; background-color: #d0d7de; margin: 12px 0;">
-    <span style="background-color: #1a7f37; color: white; padding: 4px 8px; border-radius: 20px; font-size: 12px; font-weight: bold;">APPROACH</span>
-    <p style="font-size: 13px; margin-top: 8px; font-weight: 500;">Work in Progress</p>
-  </div>
-
-</div>
-
-<div align='center'>
-
-### <u>[Back to the top!](#about-the-code)<u>
-</div>

@@ -4,14 +4,16 @@ In this document you will find all the things about the electrical components li
 
 ## Introduction
 
-Our electrical design consists of the amount of 6 sensors, with which our car is capable of flawlessly driving through the track without much difficulty. The hardware of our choice are: 
+Our electrical design consists of the amount of 10 sensors, with which our car is capable of flawlessly driving through the track without much difficulty. The hardware of our choice are: 
 
 - 2 TCS3472-TMF8821 sensors on the front for effective color detecting and distance reading.
 - 2 TMF8821 distance sensors on the sides of the robot, one on each side for maintaining the car as centered through the track.
+- 2 HC-SR04 ultrasonic distance sensors on the sides of the robot, one on each side for double verification when there are very long distances.
+- 1 HC-SR04 ultrasonic sensor on the front of the robot to work alongside TMF sensors, making double check of readings to ensure accuracy. 
 - MOTION PRO RP2350 which programmed in micropython is more than capable of handling every sensor on the list.
 - A TT motor for driving.
 - An MG996r servo motor for steering.  
-
+- A BNO085 motion sensor for centering.
 
 But this is too simple, right? Just using some generic hardware to make our car drive is too basic for us engineers? Well of course, we can do more, we can do better, and that is why we are designing our own sensors for future competitions. As a matter of fact, we ALREADY have the schematics for a mix of the powerful TCS and TMF sensors (designed by us) in one board and we plan on making the best hardware we can for our needs in this competition. 
 
@@ -43,16 +45,18 @@ But this is too simple, right? Just using some generic hardware to make our car 
 
  ## Robot Composition 
 
-The robot is composed of 6 sensors that are distributed in all the robot. These sensors help the robot to know where he goes, what he have to do, and when he have to stop. Sensors are, in few words, the eyes, hands, and ears of the robot. 
+The robot is composed of 20 sensors that are distributed in all the robot. These sensors help the robot to know where he goes, what he have to do, and when he have to stop. Sensors are, in few words, the eyes, hands, and ears of the robot. 
 
 The chosen hardare for the robot were:
 
 | Hardware | Brief Description | Specifications | Library |
 |--------|-------------------|----------------|---------|
-|TMF8821| Distance Sensor | [ams TMF8821 configurable 4x4 multi-time dToF](https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8821-configurable-4x4-multi-zone-time-of-flight-sensor)| [tmf8821.py](../Code-Development/lib/tmf8821.py) |
-|TCS3472| Color Sensor | [TCS3472 Datasheet](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf) | [tcs3472.py](../Code-Development/lib/tcs3472.py) |
-|MG996r SERVO| Servo | [MG996r Servo Datasheet](https://components101.com/sites/default/files/component_datasheet/MG996R%20Datasheet.pdf)| [servo.py](../Code-Development\lib\servo.py)|
-|TT Motor| Motor Driver | [adafruit TT Motor](https://www.adafruit.com/product/3777?srsltid=AYCX9vK63V0uk5SSyk0xiIwCBCs62URFzfz7q9NVskcAyXs2BLx0SNXz) | [dcmotor.py](../Code-Development/lib/dcmotor.py)|
+|TMF8821| Distance Sensor | [ams TMF8821 configurable 4x4 multi-time dToF](https://ams-osram.com/products/sensor-solutions/direct-time-of-flight-sensors-dtof/ams-tmf8821-configurable-4x4-multi-zone-time-of-flight-sensor)| [tmf8821.py](../Software-Architecture_and_Obstacle-Strategy/lib/tmf8821.py) |
+|TCS3472| Color Sensor | [TCS3472 Datasheet](https://cdn-shop.adafruit.com/datasheets/TCS34725.pdf) | [tcs3472.py](../Software-Architecture_and_Obstacle-Strategy/lib/tcs3472.py) |
+|MG996r SERVO| Servo | [MG996r Servo Datasheet](https://components101.com/sites/default/files/component_datasheet/MG996R%20Datasheet.pdf)| [servo.py](../Software-Architecture_and_Obstacle-Strategy/lib/servo.py)|
+|TT Motor| Motor Driver | [adafruit TT Motor](https://www.adafruit.com/product/3777?srsltid=AYCX9vK63V0uk5SSyk0xiIwCBCs62URFzfz7q9NVskcAyXs2BLx0SNXz) | [dcmotor.py](../Software-Architecture_and_Obstacle-Strategy/lib/dcmotor.py)|
+|HC-SR04| Ultrasonic Distance Sensor | [HC-SR04 Datasheet](https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf) | [hcsr04.py](../Software-Architecture_and_Obstacle-Strategy/lib/hcsr04.py) |
+| BNO085 | Motion Sensor | [BNO085 Datasheet](https://docs.sparkfun.com/SparkFun_VR_IMU_Breakout_BNO086_QWIIC/assets/component_documentation/BNO080_085-Datasheet_v1.16.pdf) | [bno085.py](../Software-Architecture_and_Obstacle-Strategy/lib/bno08x.py)
 |Cytron Motion Pro RP2350| Microcontroller | [Cytron Motion Pro RP2350 Datasheet](https://www.cytron.io/p-motion-2350-pro?srsltid=AU7gw4W5Ifi1J22W_zTflltF3oPrDEIvFmEJ27_g_rW_nqw14TCFXhvm)
 | Power Bank onn | Battery | [Portable Power Bank onn](https://www.walmart.com/ip/onn-10-000-mAh-Portable-Power-Bank-Fast-Charging-Output-20W-Dual-USB-C-ports-USB-port-LED-Digital-Display-Black-Compatible-iPhone-iPad-AirPods-Samsun/14716916910) ||
 | Fixed Voltage Power Trigger | Trigger | [Fixed Voltage Power Trigger PD Decoy Module](https://www.ebay.com/itm/286045490879?_skw=286045490879&itmmeta=01M7649B1F11JH90NDCJN9V2BR&hash=item4299a3cebf:g:qKIAAOSwBxVm2HzN&itmprp=enc%3AAQALAAAA0CHNgUiiE%2FjQhlDTaMiAde8%2FLkbRAOWvAVT2kz1F5O8Hp4I17t2PFFUNTyZ1pku0Qi%2FiUalDhmOsaqff8bvAXCGYHN1V7abMaJaplxynvhvEze3AKXbW4B5kRwescQRSmb%2FDHetmXg6VcCNPubltZAmuwWjE9ugzqzISHf1OBfNhtQ8yWAR%2BNVbbEk3GCsh7Z7yRSJyrqAEEVOSuNKn3egwtp8tr3zyI3A9mVzgUeDxGIr7KhXAZ6X9NP%2BJBBYmri1aW9QgGFAxb4y6PupXZUKA%3D%7Ctkp%3ABk9SR-iwpcS5aA) ||
@@ -76,17 +80,14 @@ This section describes how the battery supplies power to the various components 
 | MOTION PRO RP2350 (microcontroller) | 5.0mAh - 35.0mAh | 30mAh - 60mAh | Battery| 
 | TMF8821 (distance sensor) | 2.7V (min) - 3.5V (max) | Active Ranging: 57mAh |Regulator 3.3V |
 | TCS3472 (color sensor) | 2.7V (min) - 3.6V (max) | 15mAh - 20mAh | Regulator 3.3V | 
+| BNO085 (motion sensor) | 2.4V(min) - 3.6V(max) | 25mAh | Regulator 3.3V
+| HC-SR04 (ultrasonic distance sensor) | 4.5V(min) - 5.0V(max) | 15mAh | Regulator 5.0V |
 | MG996r (servo) | 4.8V (min) - 7.2V (max)| Operating Current (Under load): 500mAh - 900mAh| Regulator 5.0V|
-| TT Motor (motor) | 3.0V (min) - 7.5V (max) (optimal: 6V)| Normal Operating Current: 200mAh - 250mAh / Stall: 1200mAh - 1500mAh | Regulator 12.0V  | 
+| TT Motor (motor) | 3.0V (min) - 7.5V (max) (optimal: 6V)| Normal Operating Current: 200mAh - 250mAh / Stall: 1200mAh - 1500mAh | Regulator 12.0V  |
 
 ### Why the motor receive the energy through the 12V regulator when the optimal is 6V?
 
 Although the optimal volatge to the motor is 6V, we decided to provide the energy through the 12V regulator of the Cytron Motion Pro. The reason of this is because we can overvoltage the TT motor to give more power to the robot. We already have test it and the robot runs completely normal without proble even when the TT motor is receiving 12V.
-
-
-## Power Budget
-
-Work in Progress
 
 ## Hardware description, selection, and placement!
 
@@ -204,6 +205,59 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
 </details>
 
+ <details>
+  <summary>
+    <span style="font-size: 16px; font-weight: bold;"> HC-SR04 (click to expand)</span>
+  </summary>
+  <br>
+
+  <div align = 'center'>
+  <img src = "Electrical_Diagrams/HC-SR04_Sensor.png" width = "300" height = "300">
+
+  ### HC-SR04
+  </div>
+  
+  ### What it is?
+  
+  The HC-SR04 is an affordable, non-contact ultrasonic distance sensor commonly used with microcontrollers like Arduino to measure the distance to an object or detect obstacles.
+
+  ### Why we decide to use it?
+
+  We have used the HC-SR04 sensors in past versions of the robot. We did decide to take them out because we though the TMF8821 sensors would be enough to guide the robot through the track. After some tests, we discover that TMF sensors would not be enough, so, like we already have previous experiences with the HC-SR04 sensors, we decided to install them again in the robot to obtain the more accurate results. 
+
+  ### Ubication
+
+  There are three(3) HC-SR04 sensors in the robot: one on each side of the robot and one on the front part.
+  - The front HC-SR04 is located after the MG996r Servo. The reason of being here is to obtain double-check readings to ensure the better results.
+  - The lateral HC-SR04 are located above the TMF8821 sensors. These are here to make more easy read black walls and to act as a double-check before taking a decision. HC-SR04 are located above the TMF8821 sensors to avoid obtain floor readings.
+
+</details>
+
+ <details>
+  <summary>
+    <span style="font-size: 16px; font-weight: bold;"> BNO085 (click to expand)</span>
+  </summary>
+  <br>
+
+  <div align = 'center'>
+  <img src = "Electrical_Diagrams/BNO085_Sensor.png" width = "300" height = "300">
+
+  ### BNO085
+  </div>
+  
+  ### What it is?
+  
+  The BNO085 is a 9-degree-of-freedom (9-DOF) System in Package (SiP) motion sensor by CEVA Technologies that integrates a 3-axis accelerometer, 3-axis gyroscope, 3-axis magnetometer, and a 32-bit ARM Cortex-M0+ microcontroller.
+
+  ### Why we decide to use it?
+
+  The reason of using the BNO085 motion sensor was to be able to move through the track with more confidence. BNO085 helps the robot to center while is in the track to complete the challenge with more precision and efficiency.
+
+  ### Ubication
+
+  BNO085 motion sensor is located above the MG996r Servo. This because this position is almost the center of the robot, and the BNO085 would be more precise if it is located in the center of the robot.
+</details>
+
   <details>
   <summary>
     <span style="font-size: 16px; font-weight: bold;"> Cytron Motion Pro RP2350 (click to expand)</span>
@@ -287,10 +341,6 @@ All the information about the hardware of the robot (sensors, motors, microcontr
 
 </details>
 
-## Sensors Configuration
-
-Work in Progress
-
 ## Noise, interference, and faults
 
 <table>
@@ -366,14 +416,17 @@ We decided to replace the VL53L0X sensor with the TMF8821 sensor, as the reading
 - <span style="font-size: 15px; font-weight: bold;"> APDS9960 for TCS3472 - </span>
 Initially, we used the APDS9960, but we encountered issues with identifying the color of the pillars. The readings from the APDS9960 were not accurate, and it frequently confused the color green with red. Consequently, we researched other color sensors and discovered the TCS3472. We decided to test it, and since it provided better readings, we opted to implement it in the robot.
 - - - - -
-- <span style="font-size: 15px; font-weight: bold;"> BNO085 for BMI270 - </span>
-Work in Progress
-- - - - - 
 - <span style="font-size: 15px; font-weight: bold;"> Discard HuskyLens 2 -</span>
 We wanted to test the HuskyLens 2 camera for color detection and environmental analysis; however, due to a lack of time, we were unable to master its operation and integrate it into the robot.
 - - - - - 
 - <span style="font-size: 15px; font-weight: bold;"> Battery JUOVI for onn Power Bank - </span>
 The JUOVI battery was replaced by an onn-brand Power Bank, as the JUOVI unit suddenly failed and we urgently needed a replacement; the onn battery was the option that met all our requirements.
+- - - - -
+- <span style="font-size: 15px; font-weight: bold;"> Added BNO085  -</span>
+We added the BNO085 for centering in the track. We had planned to changed it for the BMI270 sensor but it did not arrive at time to install it to the robot. Because of this, we take the decision of keep the BNO085 for centering through the track and discard the BMI270. 
+- - - - -
+- <span style="font-size: 15px; font-weight: bold;"> Added HC-SR04 -</span>
+We decided to readd the HC-SR04 ultrasonic distance sensors because we have problems with the readings of black walls at long distances with the TMF8821 sensors. As a result, the robot was not obtaining accurate readings and was returning erroneous values. Consequently, we decided to reimplemented the HC-SR04 distance sensors to have a double-check readings in case the TMF8821 sensors fail or provide readings with not much confidence.
 <div align='center'>
 
 ### <u>[Back to the top!](#introduction)</u>
